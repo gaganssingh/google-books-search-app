@@ -1,0 +1,10 @@
+.SearchBar {
+	background-color: #888;
+	padding: 10px 0;
+	font-size: 1.3em;
+}
+
+#search-button {
+	border-radius: 5px;
+	padding: 3px;
+}
