@@ -1,15 +1,16 @@
 import React from "react";
 import "./BookType.css";
 
-export default function BookType() {
+export default function BookType(props) {
+	const { setBookFilter } = props;
 	return (
 		<div className="BookType">
-			<form>
+			<form onChange={(e) => setBookFilter(e.target.value)}>
 				<label htmlFor="book-type">Book Type:</label>
 				<select name="book-type" id="">
-					<option value="ebooks">Default</option>
-					<option value="free">Free</option>
-					<option value="paid">Paid</option>
+					<option value="ebooks">All ebooks</option>
+					<option value="free-ebooks">Free</option>
+					<option value="paid-ebooks">Paid</option>
 				</select>
 			</form>
 		</div>
