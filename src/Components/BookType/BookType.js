@@ -7,7 +7,7 @@ export default function BookType(props) {
 		<div className="BookType">
 			<form onChange={(e) => setBookFilter(e.target.value)}>
 				<label htmlFor="book-type">Book Type:</label>
-				<select name="book-type" id="">
+				<select name="book-type">
 					<option value="ebooks">All ebooks</option>
 					<option value="free-ebooks">Free</option>
 					<option value="paid-ebooks">Paid</option>

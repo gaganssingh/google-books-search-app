@@ -7,7 +7,7 @@ export default function PrintType(props) {
 		<div className="PrintType">
 			<form onChange={(e) => setPrintFilter(e.target.value)}>
 				<label htmlFor="print-type">Print Type:</label>
-				<select name="print-type" id="">
+				<select name="print-type">
 					<option value="all">All Formats</option>
 					<option value="books">Books</option>
 					<option value="magazines">Magazines</option>
